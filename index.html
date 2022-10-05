@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <header>
+        <a href="home.html" class="logo">Indramayu</a>
+        <nav class="navbar" id="myNavbar">
+            <ul>
+                <li><a href="Home.html" class="active">Home</a></li>
+                <li><a href="#sejarah">About</a></li>
+                <li><a href="#informasiLainnya">Informasi Lainnya</a></li>
+                <li>
+                    <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                        <!-- &#9776; -->
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a
+        >
+        <a href="#sejarah">About</a>
+            <a href="#informasiLainnya">informasi Lainnya</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="assets/images/mangga.jpg" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+                <img src="assets/images/mangga2.jpg" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+                <img src="assets/images/mangga3.jpg" style="width: 100%" />
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br />
+
+        <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div id="content">
+            <article id="sejarah" class="card">
+                <h2>Sejarah</h2>
+                <p>
+                    Menurut Babad Dermayu, orang pertama yang tinggal di daerah Indramayu adalah Raden Aryalodra. Raden Aryalodra berasal dari Bagelen, Jawa Tengah, putra dari Tumenggung Gagak Singalodra. Suatu waktu, Raden Wiralodra sedang melakukan tapa brata dan semedi
+                    di perbukitan melaya di kaki Gunung Sumbing. Tiga tahun berselang, Raden Wiralodra mendapat wangsit yang berbunyi, jika ia ingin bahagia berketurunan di kemudian hari, carilah lembah Sungai Cimanuk. Jika sudah di sana, Wiralodra diminta
+                    untuk menebang belukar secukupnya guna mendirikan padukuhan dan menetap di sana. Dengan didampingi Ki Tinggil dan berbekal senjata Cakra Undaksana, berangkatlah mereka ke Sungai Cimanuk. Setelah beberapa waktu, sampailah Raden Wiralodra
+                    dan Ki Tinggil di sebuah sungai yang ia kira adalah Sungai Cimanuk. Mereka pun bermalam di sungai tersebut. Esok paginya, mereka bangun dan melihat ada orang tua yang menegur dan menanyakan tujuan mereka. Menurut riwayat, orang tua
+                    tersebut bernama Ki Buyut Sidum. Setelah Wiralodra menjelaskan tujuan dan maksud mereka, ia baru tahu bahwa sungai tersebut bukanlah Sungai Cimanuk, karena Sungai Cimanuk sudah terlewat. Akhirnya, mereka kembali lagi ke arah timur
+                    laut. Berhari-hari kemudian, Wiralodra melihat sebuah sungai besar. Ia berharap itu adalah Sungai Cimanuk. Namun, lagi-lagi itu bukan Sungai Cimanuk, melainkan Sungai Cipunegara. Mereka pun melanjutkan perjalanan ke arah timur dan
+                    akhirnya menemukan Sungai Cimanuk.
+                </p>
+            </article>
+
+            <article id="asalNama" class="card">
+                <h2>Asal Usul Nama Indramayu</h2>
+                <p>
+                    Setelah sampai di Sungai Cimanuk, Raden Wiralodra bersama Ki Tinggil menetap di sebelah barat ujung sungai tersebut. Kian hari, pedukuhan Cimanuk semakin banyak dihuni, salah satunya seorang wanita cantik paripurna bernama Nyi Endang Darma. Nyi Endang
+                    Darma terkenal dengan ilmu kanuragannya. Untuk menyaksikan langsung kehebatan Nyi Endang Darma, Raden Wiralodra mengajak adu kesaktian dengannya. Karena kewalahan menghadapi Raden Wiralodra, Nyi Endang Darma loncat terjun ke dalam
+                    Sungai Cimnuk dan mengakui kekalahannya. Wiralodra kemudian mengajak Darma pulang untuk bersama-sama melanjutkan pembangunan pedukuhan, tetapi Darma menolak. Ia justru berpesan kepada Wiralodra jika kelak pedukuhan ini akan diberi
+                    nama, namakanlah dengan nama Nyi Endang Darma. Akhirnya, untuk mengenang jasa Nyi Endang Darma, pedukuhan ini dinamakan Darma Ayu yang kemudian menjadi Indramayu.
+                </p>
+            </article>
+
+            <article class="card">
+                <h2 id="informasiLainnya">Informasi lainnya seputar Indramayu</h2>
+
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')">
+              Show all
+            </button>
+                    <button class="btn" onclick="filterSelection('makanan')">
+              Makanan
+            </button>
+                    <button class="btn" onclick="filterSelection('wisata')">
+              Wisata
+            </button>
+                    <button class="btn" onclick="filterSelection('buah')">Buah</button>
+                    <button class="btn" onclick="filterSelection('budaya')">
+              Budaya
+            </button>
+                </div>
+
+                <div class="row">
+                    <div class="column makanan">
+                        <div class="contents card">
+                            <img src="assets/images/makanan/cimplo.jpg" alt="cimplo" style="width: 100%" />
+                            <h4>Cimplo</h4>
+                            <p>
+                                makanan ini terbuat dari tepung beras ketan, tape singkong, dan gula putih. Cimplo biasanya dimakan dengan saus gula merah yang sudah dicairkan.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column makanan">
+                        <div class="contents card">
+                            <img src="assets/images/makanan/nasilengko.jpg" alt="nasiLengko" style="width: 100%" />
+                            <h4>Nasi Lengko</h4>
+                            <p>
+                                Makanan ini terdiri dari nasi putih, lalu di atasnya diberi irisan tahu goreng, tempe goreng, tauge rebus, mentimun, lalu disiram bumbu kacang yang manis gurih.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column makanan">
+                        <div class="contents card">
+                            <img src="assets/images/makanan/rumbah.jpg" alt="rumbah" style="width: 100%" />
+                            <h4>Rumbah</h4>
+                            <p>
+                                Makanan khas Indramayu ini terdiri dari sayuran rebus, berupa, sayur kangkung rebus, tauge, irisan rahu goreng, kacang panjang rebus, dan disiram bumbu kacang.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column wisata">
+                        <div class="contents card">
+                            <img src="assets/images/wisata/pulaubiawak.jpg" alt="rumbah" style="width: 100%" />
+                            <h4>Pulau Biawak</h4>
+                            <table class="table">
+                                <tr>
+                                    <th>Biaya Masuk :</th>
+                                    <td>400rbu/orang</td>
+                                </tr>
+                                <tr>
+                                    <th>Lokasi :</th>
+                                    <td>Indramayu</td>
+                                </tr>
+                                <tr>
+                                    <th>Buka :</th>
+                                    <td>Setiap Hari</td>
+                                </tr>
+                            </table>
+                            <p>
+                                Pulau Biawak sendiri menyimpan lebih dari 300 biawak. Jadi tidak hanya menikmati pesona keindahan wisatanya saja. Anda juga bisa melihat biawak dari dekat dengan memberinya umpan daging maupun ikan.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column wisata">
+                        <div class="contents card">
+                            <img src="assets/images/wisata/waterboom.jpeg" alt="rumbah" style="width: 100%" />
+                            <h4>Waterboom 3 Bindang Firdaus</h4>
+                            <table class="table">
+                                <tr>
+                                    <th>Biaya Masuk :</th>
+                                    <td>25rbu/dewasa</td>
+                                </tr>
+                                <tr>
+                                    <th>Lokasi :</th>
+                                    <td>Terisi, Indramayu</td>
+                                </tr>
+                                <tr>
+                                    <th>Buka :</th>
+                                    <td>Setiap Hari</td>
+                                </tr>
+                            </table>
+                            <p>
+                                Tiga Bintang Firdaus Waterpark adalah tempat wisata kolam renang di Indramayu. Di tempat ini, tidak hanya merasakan kolam renang, tetapi dapat mengambil foto di berbagai selfie Instagramable.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column wisata">
+                        <div class="contents card">
+                            <img src="assets/images/wisata/tamancimanuk.jpg" alt="rumbah" style="width: 100%" />
+                            <h4>Taman Cimanuk</h4>
+                            <table class="table">
+                                <tr>
+                                    <th>Biaya Masuk :</th>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th>Lokasi :</th>
+                                    <td>Indramayu</td>
+                                </tr>
+                                <tr>
+                                    <th>Buka :</th>
+                                    <td>Setiap Hari</td>
+                                </tr>
+                            </table>
+                            <p>
+                                Taman Cimanuk dikenal memiliki pemandangan yang asri dan sangat hijau serta fasilitasnya pun lengkap. Pepohonan yang rimbun membuat suasana di taman ikonik Indramayu ini sangat sejuk dan nyaman.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column buah">
+                        <div class="contents card">
+                            <img src="assets/images/buah/harummanis.jpg" alt="rumbah" style="width: 100%" />
+                            <h4>Mangga Harum Manis</h4>
+                            <p>
+                                Buah ini merupakan buah asli indramayu dan merupakan mangga primadona warga lokal dengan memiliki ciri khas daging yang lebih padat dan juga rasanya yang manis legit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column buah">
+                        <div class="contents card">
+                            <img src="assets/images/buah/gedonggincu.jpg" alt="rumbah" style="width: 100%" />
+                            <h4>Mangga Gedong gincu</h4>
+                            <p>
+                                Buah ini merupakan buah asli indramayu dan merupakan mangga primadona warga lokal dengan memiliki ciri khas daging yang lebih padat dan juga rasanya yang manis legit.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="column budaya">
+                        <div class="contents card">
+                            <img src="assets/images/budaya/nadran.jpeg" alt="rumbah" style="width: 100%" />
+                            <h4>Nadran</h4>
+                            <p>
+                                Nadran adalah upacara adat nelayan yang bertujuan untuk mensyukuri nikmat atas hasil tangkapan ikan yang melimpah, mengharap peningkatan hasil pada tahun mendatang dan berdoa agar tidak mendapat aral melintang dalam mencari nafkah di laut.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="column budaya">
+                        <div class="contents card">
+                            <img src="assets/images/budaya/mapagsri.jpg" alt="rumbah" style="width: 100%" />
+                            <h4>Mapag Sri</h4>
+                            <p>
+                                Mapag Sri adalah salah satu adat/budaya masyarakat di indramayu untuk menyambut datangnya panen raya sebagai wujud rasa syukur kepada Tuhan yang Mahaesa.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="column budaya">
+                        <div class="contents card">
+                            <img src="assets/images/budaya/ngarot.jpg" alt="rumbah" style="width: 100%" />
+                            <h4>Ngarot</h4>
+                            <p>
+                                Ngarot adalah salah satu upacara adat untuk menyambut musim garapan sawah yang dilaksanakan masyarakat di Desa Lelea,
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <aside>
+            <article class="profile card">
+                <div>
+                    <h2>Kota Indramayu</h2>
+                    <p>Kota Mangga</p>
+                    <figure>
+                        <img src="assets/images/logoIndramayu.png" />
+                    </figure>
+                </div>
+
+                <section>
+                    <h3>Informasi Lainnya</h3>
+                    <table class="table">
+                        <tr>
+                            <th>Negara :</th>
+                            <td>Indonesia</td>
+                        </tr>
+                        <tr>
+                            <th>Hari jadi :</th>
+                            <td>7 Oktober 1527</td>
+                        </tr>
+                        <tr>
+                            <th>Luas Total :</th>
+                            <td>2.099 km<sup>2</sup></td>
+                        </tr>
+                        <tr>
+                            <th>Bahasa Daerah :</th>
+                            <td>Jawa indramayu, Sunda</td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+        </aside>
+
+        <aside>
+            <article class="profile card">
+                <div>
+                    <h2>Indra Purnomo Aji</h2>
+                    <img src="assets/images/profile.jpeg" />
+                </div>
+
+                <section>
+                    <h3>Informasi lainnya</h3>
+                    <table class="table">
+                        <tr>
+                            <th>Tempat Tanggal Lahir :</th>
+                            <td>Indramayu, 26 Maret 2001</td>
+                        </tr>
+                        <tr>
+                            <th>Pendidikan Terakhir:</th>
+                            <td>SMA</td>
+                        </tr>
+                        <tr>
+                            <th>Universitas :</th>
+                            <td>Universitas Pendidikan Indonesia</td>
+                        </tr>
+                        <tr>
+                            <th>Jurusan :</th>
+                            <td>Rekayasa Perangkat Lunak</td>
+                        </tr>
+                        <tr>
+                            <th>Semester :</th>
+                            <td>7</td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+        </aside>
+    </main>
+    <div id="footer">
+        <footer>&copy; 2022 <a href="#innoji">Innoji</a></footer>
+    </div>
+
+    <script src="assets/index.js"></script>
+</body>
+
+</html>
